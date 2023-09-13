@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;800&family=Mukta:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@500;600;800&family=Mukta:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans serif;
+    
+}
+.logo h1{
+    font-weight: 600;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: white;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.shadow{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-family: 'Poppins', sans serif;
+}
+nav ul li{
+    list-style: none;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover{
+    color: red;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 8%;
+}
+.main-text{
+    
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: 'Montserrat', sans serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-text h1{
+    font-size: 45px;
+}
+.main-text p{
+    margin-top: 2%;
+    font-size: 25px;
+}
+.container img{
+    width: 500px;
+}
+.main-text a{
+    width: 120px;
+    border: 3px solid red;
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 5%;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Poppins', sans serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.main-text a:hover{
+    background-color: transparent;
+    color: red;
+}
+@media screen and (max-width : 1200px){
+    .container img{
+        width: 450px;
+    }
+    .main-text h1{
+        font-size: 45px;
+    }
+    .main-text p{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .main-text a{
+        width: 110px;
+        font-size: 18px;
+        padding: 18px;
+    }
+}
+@media screen and (max-width : 1024px){
+    .container img{
+        width: 350px;
+    }
+    .main-text h1{
+        font-size: 40px;
+        text-align: left;
+    }
+    .main-text p{
+        font-size: 18px;
+    }
+    nav ul{
+        width: 50%;
+    }
+    .main-text a{
+        width: 100px;
+        font-size: 15px;
+        padding: 15px;
+    }
+    .container{
+        height: 80vh;
+        align-items: center;
+    }
+}
+@media screen and (max-width : 768px){
+    .main-text h1{
+        font-size: 35px;
+
+    }
+    .main-text p{
+        margin-top: 2%;
+        font-size: 15px;
+    }
+    .container img{
+        width: 320px;
+    }
+    .logo{
+        transform: scale(0.9);
+    }
+    nav ul{
+        width: 55%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width : 576px){
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 0px;
+        height: 90vh;
+        margin-top: 40%;
+    }
+    .container img{
+        order: 1;
+        transform: scale(1.1);
+        padding: 0;
+        z-index: 1;
+    }
+    .main-text{
+        z-index: 2;
+        width: 95%;
+    }
+    .main-text p{
+        margin-top: 2%;
+    }
+    .container .main-text{
+        order: 2;
+    }
+    .logo{
+        transform: scale(0.7);
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        margin-top: 2%;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    nav ul li a:hover{
+        color: white;
+        padding: 10px;
+        background-color: red;
+        border-radius: 10px;
+    }
+}
+.container2{
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.container2 h1{
+    text-align: center;
+    font-family: 'Montserrat', sans serif;
+    font-size: 30px;
+}
+.island-card{
+    width: 300px;
+    font-family: 'Montserrat', sans serif;
+    background-color: white;
+    transform: scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.island-card p{
+    opacity: 0.7;
+    margin-top: 2%;
+}
+.island-card button{
+    margin-top: 5%;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.island-card button a{
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans serif;
+    font-weight: 600;
+}
+.island-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+.island-card img{
+    width: 300px;
+    transition: all 0.5s ease;
+}
+.island-card main{
+    padding: 15px;
+}
+.island-card .wrapper{
+    width: 300px;
+    overflow: hidden;
+}
+.island-card .wrapper img:hover{
+    transform: scale(1.3);
+    filter: brightness(60%);
+}
+.container3{
+    padding: 40px 0px;
+    width: 100%;
+}
+.province-card{
+    width: 300px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 15px 30px 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+.province-card img{
+    width: 200px;
+    transition: all 0.2s ease;
+
+}
+.province-card img:hover{
+    transform: rotate(10deg);
+    width: 220px;
+}
+.province-card main p{
+    opacity: 0.7;
+    margin-top: 2%;
+    font-size: 15px;
+}
+.province-card main{
+    margin-top: 2%;
+    text-align: center;
+    padding: 10px;
+}
+.province-card .wrapper{
+    width: 250px;
+    overflow: hidden;
+}
+.province-card main button{
+    margin-top: 5%;
+    color: white;
+    background-color: green;
+    width: 80px;
+    outline: none;
+    font-family: 'Montserrat', sans serif;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+.province-card main a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.province-collection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container3 h1{
+    text-align: center;
+    font-family: 'Montserrat', sans serif;
+    font-size: 30px;
+}
+.container3 .btn{
+    display: block;
+    margin: auto;
+    outline: none;
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid red;
+    margin-top: 2%;
+    transition: all 0.3s ease-in-out;
+}
+.container3 .btn a{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    font-family: 'Montserrat', sans serif;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.container3 .btn:hover a{
+    color: white;
+}
+.container3 .btn:hover{
+    background-color: red;
+}
+.container4{
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 0px;
+    width: 100%;
+    text-align: center;
+}
+.container4 h1{
+    font-size: 30px;
+}
+.container4 .culture-collection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.culture-card{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    text-align: left;
+    transform: scale(0.8);
+}
+.culture-card p{
+    font-size: 15px;
+    opacity: 0.7;
+}
+.culture-card img{
+    width: 500px;
+    transition: all 0.2s ease-in-out;
+}
+.culture-card img:hover{
+    transform: scale(1.2);
+    filter: brightness(60%);
+    z-index: -999;
+}
+.culture-card .wrapper{
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    display: inline-block;
+}
+.culture-card .wrapper #overlayText{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    text-align: center;
+    left: 35%;
+    opacity: 1;
+    color: white;
+    font-family: 'Lobster', sans-serif;
+    transition: opacity 0.3s;
+    transform: scale(1.1);
+}
+.culture-card .wrapper img:hover #overlayText{
+    opacity: 0.5;
+}
+.culture-card main{
+    padding: 15px;
+}
+.container5{
+    padding: 40px;
+}
+.container5 .hero{
+    display: flex;
+    font-family: 'Montserrat', sans serif;
+    align-items: center;
+    justify-content: center;
+}
+.container5 .hero main{
+    font-size: 25px;
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.container5 .hero main p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.container5 .hero img{
+    padding: 0;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.container5 .hero ul{
+    width: 500px;
+    margin-top: 5%;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.container5 .hero ul li{
+    display: flex;
+    align-items: center;
+}
+.container5 .hero ul li img{
+    width: 30px;
+    margin: 5px;
+}
